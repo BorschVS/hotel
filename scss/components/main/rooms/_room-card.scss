@@ -1,0 +1,19 @@
+.rooms .subtitle {
+  @extend %subtitle;
+}
+
+.subtitle.card {
+    margin: 12px 0;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.rooms .text {
+  @extend %text;
+  color: $medium-grey;
+}
+
+.rooms .button-secondary {
+  @extend %secondaryButton;
+}

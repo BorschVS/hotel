@@ -1,0 +1,47 @@
+.service-index {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.subtitle {
+  @extend %subtitle;
+}
+
+.subtitle.service {
+  @extend %subtitle;
+
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+.service .text {
+    @extend %text;
+    font-size: 18px;
+    font-weight: 400;
+    color: $medium-grey;
+}
+
+.service .button-secondary {
+    @extend %secondaryButton;
+
+}
+
+.service-item {
+    margin-bottom: 40px;
+}

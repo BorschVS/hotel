@@ -1,0 +1,36 @@
+.review-card {
+  background-color: $primary-white;
+  padding: 22px 16px;
+}
+
+.avatar-thumb {
+  width: 60px;
+}
+
+.hidden-title {
+  @extend %visuallyHidden;
+}
+
+.author-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.author-info {
+    align-self: center;
+    
+}
+
+.author-info .years {
+    color: $medium-grey;
+    font-weight: 600;
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}

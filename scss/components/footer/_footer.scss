@@ -1,0 +1,36 @@
+.footer {
+    border-top: 1px solid $primary-black;
+    padding-top: 60px;
+}
+
+.footer .nav-list {
+    margin-bottom: 40px;
+}
+
+.footer .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+
+    color: $primary-black;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
+footer .logo {
+    align-self: center;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 50px;
+}

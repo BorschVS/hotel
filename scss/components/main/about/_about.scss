@@ -1,0 +1,16 @@
+.about .subtitle {
+  @extend %subtitle;
+}
+
+.about .text {
+  @extend %text;
+}
+
+.about .button-primary {
+    @extend %primaryButton;
+    margin: 0 0 12px;
+}
+
+.about .button-secondary {
+@extend %secondaryButton;
+}

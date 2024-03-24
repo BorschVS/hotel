@@ -1,0 +1,33 @@
+// utils
+@import './utils/variables';
+@import './utils/placeholders';
+
+// base
+@import './base/body';
+
+// components
+@import './components/container';
+@import './components/section';
+
+// header
+@import './components/header/header';
+@import './components/header/menu';
+@import './components//header//navigation';
+
+// main
+@import './components/main/hero/hero';
+
+@import './components/main/about/about';
+
+@import './components/main/rooms/room-card';
+
+@import './components/main/service/service';
+
+@import './components//main/reviews/review-card';
+
+// footer 
+@import './components/footer/footer';
+
+// tools 
+@import './tools/pagintion';
+

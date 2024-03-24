@@ -1,0 +1,48 @@
+// @font-face {
+//     font-family: 'ZvinSerif-Bold';
+//     src: url(../../../../fonts/ZvinSerif-Bold.eot);
+//     src: url(../../../../fonts/ZvinSerif-Bold.eot?#iefix) format('embedded-opentype'),
+//          url(../../../../fonts/ZvinSerif-Bold.otf) format('otf'),
+//          url(../../../../fonts/ZvinSerif-Bold.svg#ZvinSerif-Bold) format('svg'),
+//          url(../../../../fonts/ZvinSerif-Bold.ttf) format('truetype'),
+//          url(../../../../fonts/ZvinSerif-Bold.woff) format('woff'),
+//          url(../../../../fonts/ZvinSerif-Bold.woff2) format('woff2');
+//   }
+
+.hero {
+    @extend %centeredBlock;
+    max-width: 100%;
+    height: 530px;
+
+    background-image: url('../../../../img/hero/hero720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-container {
+    position: relative;
+    transform: translate(50%, 80%);
+    left: -50%;
+}
+
+
+.title {
+    font-family: $font-secondary;
+    font-size: 10vw;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.hero .text {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+.hero .button {
+    @extend %centeredBlock;
+    @extend %primaryButton;
+    padding: 15px 30px;
+}

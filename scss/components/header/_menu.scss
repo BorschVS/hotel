@@ -1,0 +1,83 @@
+.menu-container {  
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 100vh;
+  
+      z-index: 1;
+  
+      display: none;
+  
+      &.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        background-color: $dark-black;
+      }
+    }
+  
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 96px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      gap: 305px;
+    }
+  }
+  
+  .menu-button {
+    @extend %primaryButton;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 0px;
+      right: 0;
+  
+      margin: 0;
+      padding: 6px 16px;
+      z-index: 1;
+
+      font-size: 16px;
+
+      cursor: pointer;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  
+    &.is-open {
+      position: fixed;
+      top: 32px;
+      right: 30px;
+      z-index: 2;
+      
+      background-color: transparent;
+      border: none;
+    }
+  
+    // &:hover {
+    //   fill: $accent-color;
+    // }
+
+  }
+
+  .menu-button .menu-button-txt {
+    display: block;
+  }
+
+  .menu-button.is-open .menu-button-txt{
+    display: none;
+  }
+
+  .menu-button .menu-button-icon {
+    display: none;
+  }
+
+  .menu-button.is-open .menu-button-icon {
+    display: block;
+  }
